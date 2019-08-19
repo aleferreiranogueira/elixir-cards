@@ -4,7 +4,7 @@ defmodule Cards do
   """
 
   @doc """
-    Creates a deck of cards
+  Creates a deck of cards
   """
   @spec make_deck() :: [String.t()]
   def make_deck do
@@ -17,7 +17,7 @@ defmodule Cards do
   end
 
   @doc """
-    Randomizes a deck
+  Randomizes a deck
   """
   @spec shuffle([String.t()]) :: [String.t()]
   def shuffle(deck) do
@@ -25,7 +25,7 @@ defmodule Cards do
   end
 
   @doc """
-    Deals a hand of cards based on `hand_size`
+  Deals a hand of cards based on `hand_size`
 
   ## Examples
       iex(1)> deck = Cards.make_deck
@@ -45,9 +45,9 @@ defmodule Cards do
   end
 
   @doc """
-    Determines if a given card is present on a given deck
+  Determines if a given card is present on a given deck
 
-    ## Examples
+  ## Examples
       iex> deck = Cards.make_deck
       iex> Cards.contains?(deck, "Ace of Spades")
       true
