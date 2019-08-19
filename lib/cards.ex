@@ -28,6 +28,7 @@ defmodule Cards do
   Deals a hand of cards based on `hand_size`
 
   ## Examples
+
       iex(1)> deck = Cards.make_deck
       iex(2)> Cards.deal(deck, 5)
       {["Ace of Spades", "Two of Spades", "Three of Spades", "Four of Spades",
@@ -48,9 +49,11 @@ defmodule Cards do
   Determines if a given card is present on a given deck
 
   ## Examples
+
       iex> deck = Cards.make_deck
       iex> Cards.contains?(deck, "Ace of Spades")
       true
+
   """
   @spec contains?([String.t()], String.t()) :: boolean
   def contains?(deck, card) do
